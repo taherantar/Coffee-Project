@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Sofia+Sans:wght@500&display=swap");
+
+/* *********************************? Global ******************************/
+
+:root {
+  --lightGray-background: #f7fafd;
+  --darkGray-background: #e8eff6;
+  --button-background: #ff556e;
+  --primary-font: "Cairo", sans-serif;
+  --secondary-font: "Sofia Sans", sans-serif;
+  --Body-text-dark-gray: #777;
+}
+.clearfix {
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/* *********************************!  End Global ******************************/
+
+/* Table Of Contents:
+
+01. Navbar
+02. Header
+03. Small Features
+04. Details Lightbox
+05. Schedule tasks
+06. Special Features
+07. Images Slider
+08. User Testimonials
+09. Rate icons
+10. Footer
+11. Copyright
+12. Back To Top Button
+13. Media Queries */
+
+/* Start Navbar *****************************/
+.nav-bar {
+  padding: 1rem;
+  position: absolute;
+  width: inherit;
+}
+.nav-bar .navbar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar-brand .text-white {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+.navbar-nav a {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fffbf2;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+a:first-child {
+  color: #da9f5b;
+}
+
+.nav-link .fa-caret-down {
+  margin-left: 0.25em;
+}
+.nav-link:hover {
+  color: #da9f5b;
+}
+.navbar-toggler {
+  display: none;
+}
+@media (min-width: 400px) and (max-width: 800px) {
+  .navbar-items {
+    flex-wrap: wrap;
+  }
+  .nav-bar .navbar-items h1{
+    font-size: 2rem;
+  }
+  .nav-bar .navbar-items {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-content: flex-start;
+}
+}
+/* End Navbar *****************************/
+/* Start carousel ******************************/
+.carousel-item .img-header img{
+  width: 100%;
+}
+.carousel-caption {
+  position: relative;
+  background: rgba(51,33,29,0.7);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h2{
+  color: #DA9F5B;
+  font-size: xx-large;
+  font-family: "Roboto",sans-serif;
+
+}
+h2:last-child{
+  color: #fff;
+}
+h1{
+  color: #fff;
+  font-size: 7rem;
+  font-family: "Roboto",sans-serif;
+  margin: 0;
+}
+
+/* .overlay-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  left: 0;
+  z-index: 1
+}
+
+.overlay-bottom::after {
+  /* background-color: #2d201f; */
+  /* margin-top: -3px; */
+/* } */
