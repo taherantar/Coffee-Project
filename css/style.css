@@ -20,8 +20,7 @@
 }
 body {
   width: 100%;
-  height: 100%;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -31,6 +30,9 @@ body {
 .container {
   width: 100%;
   margin: auto;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 /* *********************************!  End Global ******************************/
@@ -50,6 +52,33 @@ body {
 11. Copyright
 12. Back To Top Button
 13. Media Queries */
+@media (min-width: 400px) and (max-width: 800px) {
+  .navbar-items {
+    width: 50%;
+    flex-wrap: 0;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .nav-bar .navbar-items h1 {
+    font-size: 2rem;
+  }
+  .nav-bar .navbar-items {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-content: flex-start;
+  }
+  .carousel-caption h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+  .about .container .row-cup{
+    display: block;
+  }
+}
 
 /* Start Navbar *****************************/
 .nav-bar {
@@ -92,20 +121,7 @@ a:first-child {
 .navbar-toggler {
   display: none;
 }
-@media (min-width: 400px) and (max-width: 800px) {
-  .navbar-items {
-    flex-wrap: wrap;
-  }
-  .nav-bar .navbar-items h1 {
-    font-size: 2rem;
-  }
-  .nav-bar .navbar-items {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    align-content: flex-start;
-  }
-}
+
 /* End Navbar *****************************/
 /* Start carousel ******************************/
 .carousel-item .img-header img {
@@ -168,84 +184,118 @@ a:first-child {
   text-align: center;
   margin-top: 88px;
 }
-.about .row-cup{
+.about .row-cup {
   display: flex;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
   align-items: center;
 }
-.row-cup .our-l{
+.row-cup .our-l {
   width: 90%;
 }
-.about .section-title h4{
-  color: #DA9F5B;
-  font-weight: 400;
+.section-title h4 {
+  color: #da9f5b;
   font-size: 1.5rem;
   margin: 0;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-.about .section-title h1  {
+.about .section-title h1 {
   font-weight: 700;
   margin-bottom: 0.5rem;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  color: #33211D;
+  color: #33211d;
   font-size: 3rem;
   margin: 0;
 }
-.about .row-cup h1{
+.about .row-cup h1 {
   margin-bottom: 0.5rem;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 1.2;
-  color: #33211D;
+  color: #33211d;
 }
 
-.about .row-cup .our-text-l{
+.about .row-cup .our-text-l {
   margin-bottom: 0.5rem;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: larger;
   line-height: 1.2;
-  color: #33211D;
+  color: #33211d;
 }
-.about .row-cup .our-l button{
+.about .row-cup .our-l button {
   color: #fff;
-    background-color: #33211D;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-
+  background-color: #33211d;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
-.about .row-cup .our-r button{
+.about .row-cup .our-r button {
   color: #212529;
   font-weight: 700;
-    background-color: #DA9F5B;
-    border-color:#DA9F5B ;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-margin-top: 16px;
+  background-color: #da9f5b;
+  border-color: #da9f5b;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 16px;
 }
-.about .row-cup .our-r h5{
-  font-family: "Roboto",sans-serif;
+.about .row-cup .our-r h5 {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: larger;
   line-height: 1.2;
-  color: #33211D;
-  margin-bottom:0;
+  color: #33211d;
+  margin-bottom: 0;
   margin-top: 10px;
 }
-.about .row-cup .our-r .text-primary{
-  color: #DA9F5B;
+.about .row-cup .our-r .text-primary {
+  color: #da9f5b;
   margin-right: 10px;
   font-weight: 900;
 }
+.section-title {
+  position: relative;
+  padding: 115px 0 35px 0;
+  text-align: center;
+  margin-top: 100px;
+}
+.row-left h4{
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Roboto",sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #33211D;
+}
 
+.our-services .section-title h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #33211d;
+  font-size: 3rem;
+  margin: 0;
+  text-transform: capitalize;
+
+}
+.row-left{
+  display: flex;
+}
+.services {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-direction: row;
+}
