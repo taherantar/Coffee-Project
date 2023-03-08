@@ -66,6 +66,21 @@ body {
 }
 /* *********************************!  End Global ******************************/
 /* Start Navbar *****************************/
+@media (min-width: 400px) and (max-width: 800px) {
+ .nav-bar .navbar-items .navbar-nav{
+  display: grid;
+ }
+ .nav-bar .container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(51, 33, 29, 0.61);
+  text-align: center;
+ }
+}
+
 .nav-bar {
   position: absolute;
   z-index: 3;
@@ -124,6 +139,7 @@ a:first-child {
   height: 700px;
   z-index: 2;
 }
+
 /* End Navbar *****************************/
 /* Start carousel ******************************/
 .carousel-item .img-header img {
@@ -184,6 +200,9 @@ a:first-child {
     color: #fff;
     /* font-size: 3rem; */
     margin-top: -30px;
+  }
+  .section-title::after{
+    display: none;
   }
 }
 /************************************* about us */
@@ -512,13 +531,13 @@ a:first-child {
   justify-items: center;
   text-align: center;
 }
-.offer .form .input-group {
+.input-group {
   display: flex;
   height: 55px;
   width: 72%;
   margin-left: 68px;
 }
-.offer .form .input-group .sign {
+.input-group .sign {
   height: 55px;
   background-color: #da9f5b;
   color: #33211d;
@@ -528,9 +547,14 @@ a:first-child {
   margin: 0;
   padding: 0;
 }
-.offer .plac {
+.plac {
   padding-left: 15px;
   border: none;
+}
+.footer .input-group {
+  margin: auto;
+  width: 100%;
+  margin-top: 20px;
 }
 /************************MENU & PRICING*************************/
 .competitive-pricing .pricing-row {
@@ -617,19 +641,21 @@ a:first-child {
     margin-left: 15px;
     width: 80%;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
   }
   .reservation .row-center {
     display: flex;
   }
   .competitive-pricing .pricing-row .content {
-    /* position: relative; */
     width: 100%;
-    /* padding-right: 15px; */
     padding-left: 15px;
   }
   .competitive-pricing .section-title h1 {
     font-size: 2.5rem;
+  }
+  .pricing-row .row{
+    background-color: #ced4da;
+    width: 80%;
   }
 }
 /*****************Reservation********************/
@@ -816,7 +842,23 @@ button {
 .footer .myContacts{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+.address, .follow, .openHours, .news{
+  width: 20%;
+
+}
+.myContacts .media{
+  display: flex;
+  margin-top: 20px;
+}
+.myContacts .fa-brands{
+  border: 1px solid;
+  margin: 5px;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.5rem;
 }
 .footer .myContacts h4{
   text-transform: uppercase;
@@ -829,14 +871,44 @@ font-size: 1.5rem;
 .footer {
   margin-top: 65px;
 }
+.fa-map-marker-alt{
+  margin: 0;
+}
+.footer .myContacts p{
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (min-width: 400px) and (max-width: 950px) {
+  .footer .myContacts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.address, .follow, .openHours, .news {
+  width: 50%;
+  margin-top: 20px;
+}
+.footer .myContacts h4 {
+ margin: 0;
+}
+}
+.copyright,
+.designed{
+  font-size: 1.2rem;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
 /**************Back To Top*****************/
 .top {
   --offset: 50px;
   position: sticky;
-  bottom: 20px;
+  bottom: 36px;
   margin-right: 10px;
   place-self: end;
-  margin-top: calc(100vh + var(--offset));
+  margin-top: calc  (100vh + var(--offset));
   text-decoration: none;
   padding: 10px;
   font-family: sans-serif;
