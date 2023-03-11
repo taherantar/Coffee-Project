@@ -51,7 +51,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  /* width: 100%; */
   /* border: 1px solid; */
 }
 
@@ -81,30 +80,30 @@ body {
 
 /* *********************************!  End Global ******************************/
 /* Start Navbar *****************************/
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 830px) {
   .nav-bar .navbar-items .navbar-nav {
     display: grid;
   }
 
   .nav-bar .container {
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 300px;
-    background-color: rgba(51, 33, 29, 0.61);
-    text-align: center;
+  }
+  .navbar-nav a {
+    font-size: larger;
   }
 }
 
 .nav-bar {
   position: absolute;
   z-index: 3;
+  width: 100%;
 }
 
 .nav-bar .container {
   display: flex;
   align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
 }
 
 .nav-bar .navbar-items {
@@ -175,10 +174,10 @@ a:first-child {
   display: flex;
   z-index: 2;
   position: absolute;
-  inset:0;
+  inset: 0;
   flex-direction: column;
   justify-content: center;
-  line-height: normal;
+  height: 700px;
 }
 
 .carousel-item::before {
@@ -196,7 +195,6 @@ a:first-child {
 }
 
 .carousel-caption h2:first-child {
-  margin-top: 137px;
   color: #da9f5b;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
@@ -209,33 +207,18 @@ a:first-child {
   margin: 0;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 830px) {
   .carousel-caption h1 {
-    color: #fff;
-    font-size: 8vh;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
+    font-size: 4.5rem;
   }
-
+  .carousel-caption {
+    justify-content: flex-end;
+    height: 550px;
+  }
   .carousel-caption h2:first-child {
-    /* margin-top: 137px; */
-    color: #da9f5b;
-    /* font-size: 2rem; */
-    font-family: "Roboto", sans-serif;
     margin: 0;
-  }
-
-  .carousel-caption h2:last-child {
-    color: #fff;
-    /* font-size: 3rem; */
-    margin-top: -30px;
-  }
-
-  .section-title::after {
-    display: none;
   }
 }
-
 /************************************* about us */
 
 .section-title::after {
@@ -261,10 +244,6 @@ a:first-child {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
-}
-
-.about .row-cup .our-l {
-  width: fit-content;
 }
 
 .about-img .image-cup img {
@@ -498,13 +477,14 @@ a:first-child {
   width: 20%;
 }
 
-@media (min-width: 400px) and (max-width: 850px) {
+@media (min-width: 400px) and (max-width: 830px) {
   .Services-intro .content-Services {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     flex-direction: column;
+    width: 75%;
   }
 
   .Services-intro .content-Services .content {
@@ -528,11 +508,8 @@ a:first-child {
   .beans,
   .Quality,
   .Booking {
-    align-items: center;
-    display: flex;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
+    align-items: flex-start;
+
     padding-left: 15px;
     flex-direction: column;
   }
@@ -575,7 +552,7 @@ a:first-child {
   color: #da9f5b;
   font-size: 4rem;
   font-weight: 700;
-  margin-top: 85px;
+  margin-top: 80px;
 }
 
 .offer h3 {
@@ -588,7 +565,6 @@ a:first-child {
 .offer h4 {
   font-size: 1.25rem;
   color: #fff;
-  /* margin: 0; */
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
@@ -599,7 +575,6 @@ a:first-child {
   margin: auto;
   display: grid;
   justify-content: center;
-  justify-items: center;
   text-align: center;
 }
 
@@ -778,19 +753,19 @@ a:first-child {
   color: #da9f5b;
   font-size: 3.5rem;
   margin-bottom: 0;
-  margin: 55px;
 }
 
 .reservation .content h1:last-child {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 .reservation .text-desc {
-  width: 80%;
+  width: 75%;
   margin-left: 40px;
+  margin-top: 15%;
 }
 
 .reservation .text-desc p {
@@ -800,18 +775,28 @@ a:first-child {
 .reservation .text-desc ul li {
   list-style: none;
   color: #fff;
+  margin-bottom: 10px;
 }
-
+.reservation .text-desc ul{
+  padding: 0;
+}
 .text-desc .fa-check {
   color: #da9f5b;
+  margin-right: 10px;
 }
-
+.reservation .book-table{
+  width: 50%;
+}
+.reservation .content{
+  width: 50%;
+}
 .book-table .text-center {
   background-color: rgba(51, 33, 29, 0.8);
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
   height: 550px;
+  margin-top: -30px;
 }
 
 .form-control,
@@ -849,9 +834,22 @@ button {
 }
 
 @media (min-width: 400px) and (max-width: 950px) {
+ 
   .reservation .row-center {
     display: block;
   }
+  .reservation .content {
+    text-align: center;
+    width: 100%;
+}
+.reservation .text-desc{
+  width: 100%;
+  margin-left: 0;
+}
+.reservation .book-table {
+  width: 100%;
+  margin-top: 70px;
+}
 
   .reservation .content h1:first-child {
     color: #da9f5b;
@@ -939,10 +937,10 @@ button {
   .clients .testimonial-carousel {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
   }
-
+  .clients .testimonial-carousel .testimonial-item {
+    width: 100%;
+  }
   .dot {
     display: none;
   }
@@ -969,13 +967,13 @@ button {
 .follow,
 .openHours,
 .news {
-  width: 20%;
-
+  width: 22%;
 }
 
 .myContacts .media {
   display: flex;
-  margin-top: 20px;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .myContacts .fa-brands {
@@ -985,6 +983,7 @@ button {
   height: 45px;
   line-height: 45px;
   font-size: 1.5rem;
+  width: 100%;
 }
 
 .footer .myContacts h4 {
@@ -1008,9 +1007,14 @@ button {
 
 .footer .myContacts p {
   font-size: 1.2rem;
+  margin-bottom: 7px;
+}
+.footer .openHours p{
   margin: 0;
 }
-
+.footer .myContacts .address i{
+  margin-right: 15px;
+}
 @media (min-width: 400px) and (max-width: 950px) {
   .footer .myContacts {
     display: flex;
@@ -1022,13 +1026,21 @@ button {
   .follow,
   .openHours,
   .news {
-    width: 50%;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
   }
-
+  .myContacts .media {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
   .footer .myContacts h4 {
     margin: 0;
   }
+  .footer .input-group {
+  width: 50%;
+}
 }
 
 .copyright,
