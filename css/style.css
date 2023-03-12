@@ -707,10 +707,6 @@ a:first-child {
     align-items: center;
   }
 
-  .reservation .row-center {
-    display: flex;
-  }
-
   .competitive-pricing .pricing-row .content {
     width: 100%;
     padding-left: 15px;
@@ -850,11 +846,19 @@ button {
   width: 100%;
   margin-top: 70px;
 }
-
+.reservation .text-desc p {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
   .reservation .content h1:first-child {
     color: #da9f5b;
     text-align: center;
     margin: 0;
+  }
+  .reservation{
+    width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -1032,7 +1036,8 @@ button {
   }
   .myContacts .media {
     display: flex;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
     flex-direction: column;
 }
   .footer .myContacts h4 {
