@@ -8,7 +8,7 @@
   --button-background: #ff556e;
   --primary-font: "Cairo", sans-serif;
   --secondary-font: "Sofia Sans", sans-serif;
-  --Body-text-dark-gray: #777;
+  --body-text-dark-gray: #777;
   scroll-behavior: smooth;
 }
 
@@ -26,6 +26,7 @@
   content: "";
   display: block;
 }
+
 /* ************************TODO ******************************* */
 * {
   box-sizing: border-box;
@@ -51,7 +52,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  /* border: 1px solid; */
 }
 
 .overlay-top::before {
@@ -88,6 +88,7 @@ body {
   .nav-bar .container {
     flex-direction: column;
   }
+
   .navbar-nav a {
     font-size: larger;
   }
@@ -211,14 +212,17 @@ a:first-child {
   .carousel-caption h1 {
     font-size: 4.5rem;
   }
+
   .carousel-caption {
     justify-content: flex-end;
     height: 550px;
   }
+
   .carousel-caption h2:first-child {
     margin: 0;
   }
 }
+
 /************************************* about us */
 
 .section-title::after {
@@ -399,18 +403,19 @@ a:first-child {
 }
 
 /************OUR SERVICES***************/
-.Services-intro .content-Services {
+.Services-intro .content-services {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
 }
 
-.Services-intro .content-Services .content {
+.Services-intro .content-services .content {
   margin-bottom: 3rem;
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
   width: 50%;
+  text-align: center;
 }
 
 .delivery,
@@ -424,7 +429,7 @@ a:first-child {
   padding-right: 15px;
 }
 
-.Services-intro .content-Services .content img {
+.Services-intro .content-services .content img {
   max-width: 85%;
 }
 
@@ -432,12 +437,12 @@ a:first-child {
   width: 95%;
 }
 
-.Services-intro .content-Services .content .description {
+.Services-intro .content-services .content .description {
   position: relative;
   width: 100%;
 }
 
-.Services-intro .content-Services .content h4 {
+.Services-intro .content-services .content h4 {
   margin-bottom: 0.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -478,21 +483,21 @@ a:first-child {
 }
 
 @media (min-width: 400px) and (max-width: 830px) {
-  .Services-intro .content-Services {
+  .Services-intro .content-services {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     flex-direction: column;
-    width: 75%;
+    align-items: center
   }
 
-  .Services-intro .content-Services .content {
+  .Services-intro .content-services .content {
     margin-bottom: 3rem;
     position: relative;
     padding-right: 15px;
     padding-left: 15px;
-    width: 100%;
+    width: 75%;
   }
 
   .Services-intro h1 {
@@ -773,19 +778,24 @@ a:first-child {
   color: #fff;
   margin-bottom: 10px;
 }
-.reservation .text-desc ul{
+
+.reservation .text-desc ul {
   padding: 0;
 }
+
 .text-desc .fa-check {
   color: #da9f5b;
   margin-right: 10px;
 }
-.reservation .book-table{
+
+.reservation .book-table {
   width: 50%;
 }
-.reservation .content{
+
+.reservation .content {
   width: 50%;
 }
+
 .book-table .text-center {
   background-color: rgba(51, 33, 29, 0.8);
   text-align: center;
@@ -830,33 +840,39 @@ button {
 }
 
 @media (min-width: 400px) and (max-width: 950px) {
- 
+
   .reservation .row-center {
     display: block;
   }
+
   .reservation .content {
     text-align: center;
     width: 100%;
-}
-.reservation .text-desc{
-  width: 100%;
-  margin-left: 0;
-}
-.reservation .book-table {
-  width: 100%;
-  margin-top: 70px;
-}
-.reservation .text-desc p {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
+  }
+
+  .reservation .text-desc {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .reservation .book-table {
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .reservation .text-desc p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
   .reservation .content h1:first-child {
     color: #da9f5b;
     text-align: center;
     margin: 0;
   }
-  .reservation{
+
+  .reservation {
     width: 100%;
     margin-left: 0;
   }
@@ -942,9 +958,11 @@ button {
     display: flex;
     flex-direction: column;
   }
+
   .clients .testimonial-carousel .testimonial-item {
     width: 100%;
   }
+
   .dot {
     display: none;
   }
@@ -1013,12 +1031,15 @@ button {
   font-size: 1.2rem;
   margin-bottom: 7px;
 }
-.footer .openHours p{
+
+.footer .openHours p {
   margin: 0;
 }
-.footer .myContacts .address i{
+
+.footer .myContacts .address i {
   margin-right: 15px;
 }
+
 @media (min-width: 400px) and (max-width: 950px) {
   .footer .myContacts {
     display: flex;
@@ -1034,18 +1055,21 @@ button {
     margin-top: 25px;
     text-align: center;
   }
+
   .myContacts .media {
     display: flex;
     width: 50%;
     margin-left: 25%;
     flex-direction: column;
-}
+  }
+
   .footer .myContacts h4 {
     margin: 0;
   }
+
   .footer .input-group {
-  width: 50%;
-}
+    width: 50%;
+  }
 }
 
 .copyright,
@@ -1055,12 +1079,13 @@ button {
   color: #fff;
   text-align: center;
   text-transform: capitalize;
+  margin: 10px 0;
 }
 
 /**************Back To Top*****************/
 .top {
   --offset: 50px;
-  position: sticky;
+  position: fixed;
   bottom: 36px;
   margin-right: 10px;
   place-self: end;
