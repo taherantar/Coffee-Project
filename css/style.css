@@ -31,6 +31,7 @@
 * {
   box-sizing: border-box;
   font-family: var(--primary-font);
+  /* border: 1px solid; */
 }
 
 body {
@@ -39,13 +40,12 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #555;
-  text-align: left;
+  /* text-align: left; */
   background-color: #fffbf2;
 }
 
 .container {
   width: 100%;
-  margin: auto;
 }
 
 *,
@@ -80,7 +80,7 @@ body {
 
 /* *********************************!  End Global ******************************/
 /* Start Navbar *****************************/
-@media (min-width: 400px) and (max-width: 830px) {
+@media (min-width: 400px) and (max-width: 930px) {
   .nav-bar .navbar-items .navbar-nav {
     display: grid;
   }
@@ -142,7 +142,7 @@ a:first-child {
 
 .nav-link .fa-caret-down {
   margin-left: 0.25em;
-  width: auto;
+  /* width: auto; */
 }
 
 .nav-link:hover {
@@ -208,7 +208,7 @@ a:first-child {
   margin: 0;
 }
 
-@media (min-width: 400px) and (max-width: 830px) {
+@media (min-width: 400px) and (max-width: 950px) {
   .carousel-caption h1 {
     font-size: 4.5rem;
   }
@@ -247,7 +247,6 @@ a:first-child {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
 }
 
 .about-img .image-cup img {
@@ -376,7 +375,7 @@ a:first-child {
   flex-direction: row;
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 980px) {
   .about .row-cup {
     display: block;
     text-align: center;
@@ -399,6 +398,9 @@ a:first-child {
   .about .row-cup .our-r button {
     width: 100%;
     margin: 0;
+  }
+  .about-img{
+    margin-top: 40px;
   }
 }
 
@@ -440,6 +442,7 @@ a:first-child {
 .Services-intro .content-services .content .description {
   position: relative;
   width: 100%;
+  text-align: left;
 }
 
 .Services-intro .content-services .content h4 {
@@ -478,18 +481,18 @@ a:first-child {
   text-align: center;
 }
 
-.fa-table {
-  width: 20%;
-}
+  /* .fa-table {
+    width: 20%;
+  } */
 
-@media (min-width: 400px) and (max-width: 830px) {
+@media (min-width: 400px) and (max-width: 930px) {
   .Services-intro .content-services {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     flex-direction: column;
-    align-items: center
+    align-items: center;
   }
 
   .Services-intro .content-services .content {
@@ -513,10 +516,9 @@ a:first-child {
   .beans,
   .Quality,
   .Booking {
-    align-items: flex-start;
-
+    align-items: center;
     padding-left: 15px;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .fa-truck,
@@ -526,7 +528,12 @@ a:first-child {
     text-align: center;
   }
 }
+@media (min-width: 400px) and (max-width: 730px) {
+.delivery, .beans, .Quality, .Booking {
+display: block;
+}
 
+}
 /********Offer**************/
 
 .offer {
@@ -586,7 +593,7 @@ a:first-child {
 .input-group {
   display: flex;
   height: 55px;
-  width: 72%;
+  width: 300px;
   margin-left: 68px;
 }
 
@@ -604,6 +611,7 @@ a:first-child {
 .plac {
   padding-left: 15px;
   border: none;
+  width: inherit;
 }
 
 .footer .input-group {
@@ -704,12 +712,11 @@ a:first-child {
 
 @media (min-width: 400px) and (max-width: 950px) {
   .competitive-pricing .pricing-row {
-    display: flex;
-    margin-right: 15px;
-    margin-left: 15px;
-    width: 80%;
+      display: flex;
+    /* margin-right: 15px; */
+    /* margin-left: 15px; */
+    /* width: 100%; */
     flex-direction: column;
-    align-items: center;
   }
 
   .competitive-pricing .pricing-row .content {
@@ -719,11 +726,13 @@ a:first-child {
 
   .competitive-pricing .section-title h1 {
     font-size: 2.5rem;
+    
   }
-
+.competitive-pricing .content h1{
+  text-align: center;
+}
   .pricing-row .row {
     background-color: #ced4da;
-    width: 80%;
   }
 }
 
@@ -840,7 +849,6 @@ button {
 }
 
 @media (min-width: 400px) and (max-width: 950px) {
-
   .reservation .row-center {
     display: block;
   }
@@ -955,12 +963,18 @@ button {
 
 @media (min-width: 400px) and (max-width: 950px) {
   .clients .testimonial-carousel {
-    display: flex;
+       display: flex;
     flex-direction: column;
+    align-items: center;
   }
-
+.testimonial-carousel .content {
+display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
   .clients .testimonial-carousel .testimonial-item {
-    width: 100%;
+    width: 75%;
   }
 
   .dot {
@@ -975,6 +989,11 @@ button {
     font-family: "Roboto", sans-serif;
     /* line-height: 1.2; */
     color: #33211d;
+  }
+  .elitr{
+    width: 100%;
+        text-align: center;
+
   }
 }
 
@@ -1068,7 +1087,7 @@ button {
   }
 
   .footer .input-group {
-    width: 50%;
+    /* width: 50%; */
   }
 }
 
