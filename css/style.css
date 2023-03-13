@@ -399,7 +399,7 @@ a:first-child {
     width: 100%;
     margin: 0;
   }
-  .about-img{
+  .about-img {
     margin-top: 40px;
   }
 }
@@ -481,7 +481,7 @@ a:first-child {
   text-align: center;
 }
 
-  /* .fa-table {
+/* .fa-table {
     width: 20%;
   } */
 
@@ -529,10 +529,12 @@ a:first-child {
   }
 }
 @media (min-width: 400px) and (max-width: 730px) {
-.delivery, .beans, .Quality, .Booking {
-display: block;
-}
-
+  .delivery,
+  .beans,
+  .Quality,
+  .Booking {
+    display: block;
+  }
 }
 /********Offer**************/
 
@@ -712,7 +714,7 @@ display: block;
 
 @media (min-width: 400px) and (max-width: 950px) {
   .competitive-pricing .pricing-row {
-      display: flex;
+    display: flex;
     /* margin-right: 15px; */
     /* margin-left: 15px; */
     /* width: 100%; */
@@ -726,11 +728,10 @@ display: block;
 
   .competitive-pricing .section-title h1 {
     font-size: 2.5rem;
-    
   }
-.competitive-pricing .content h1{
-  text-align: center;
-}
+  .competitive-pricing .content h1 {
+    text-align: center;
+  }
   .pricing-row .row {
     background-color: #ced4da;
   }
@@ -963,16 +964,16 @@ button {
 
 @media (min-width: 400px) and (max-width: 950px) {
   .clients .testimonial-carousel {
-       display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-.testimonial-carousel .content {
-display: flex;
+  .testimonial-carousel .content {
+    display: flex;
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-}
+  }
   .clients .testimonial-carousel .testimonial-item {
     width: 75%;
   }
@@ -990,10 +991,9 @@ display: flex;
     /* line-height: 1.2; */
     color: #33211d;
   }
-  .elitr{
+  .elitr {
     width: 100%;
-        text-align: center;
-
+    text-align: center;
   }
 }
 
@@ -1084,10 +1084,6 @@ display: flex;
 
   .footer .myContacts h4 {
     margin: 0;
-  }
-
-  .footer .input-group {
-    /* width: 50%; */
   }
 }
 
